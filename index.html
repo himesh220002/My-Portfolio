@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5f1895c567.js" crossorigin="anonymous"></script>
+</head>  
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo5.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+                
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Himesh</span><br> Satyam from India</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------------------about--------------------------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.webp">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a passionate and dedicated web developer with a solid foundation in HTML, CSS, JavaScript, React.js and various modern web development frameworks and tools. My experience includes building  responsive and dynamic web applications. I have a strong understanding of the Document Object Model and am proficient in API integration and authentication processes. My goal is to create user-friendly, efficient,and visually appealing web applications. I am committed to following best practices to write  clean, maintainable, and scalable code. I am always eager to learn new technologies and improve my skills to stay current with industry trends.</p>
+                    <div class="tab-titels">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web app development</li>
+                            <li><span>App Development</span><br>Building android/iOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023-Current</span><br>Designing and developing web apps at WebInfo solutions</li>
+                            
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022</span><br>Computer Science and Engineering from SJC Institute of Technology</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------------------------services------------------------ -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="services-list">
+                <div> 
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web design</h2>
+                    <p>Specialized in creating visually stunning, user-friendly, and responsive web designs tailored to meet diverse client needs. With a focus on delivering intuitive user experiences, I blend creativity with the latest technologies to craft websites that are both functional and aesthetically appealing.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div> 
+                    <i class="fa-brands fa-uikit"></i>
+                    <h2>UI/UX design</h2>
+                    <p>Designing user experiences that are seamless, intuitive, and engaging, backed by research and creativity. My approach combines aesthetics with functionality, ensuring that every interaction between the user and the product is meaningful and impactful.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div> 
+                    <i class="fa-solid fa-mobile"></i>
+                    <h2>App design</h2>
+                    <p>Specialized in designing innovative, user-centric mobile and web applications that deliver seamless experiences. By blending functionality with modern aesthetics, I ensure that every app is not only visually appealing but also highly intuitive and engaging.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- ---------------------------portfolio------------------------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+              <div class="work-list">
+                <div class="work">
+                    <img src="https://res.cloudinary.com/dbcx5bxea/image/upload/v1746636613/Car-marketplace/eycq8djynupdyoccedmj.png">
+                    <div class="layer">
+                        <h3>My App</h3>
+                        <p>The app connects you to people around the world. Download it from play store.</p>
+                        <a href="https://car-marketplace-web-app-seven.vercel.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work2.jpg">
+                    <div class="layer">
+                        <h3>My App</h3>
+                        <p>The app connects you to people around the world. Download it from play store.</p>
+                        <a href="#"><i class="fa-solid fa-download "></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work3.jpg">
+                    <div class="layer">
+                        <h3>My App</h3>
+                        <p>The app connects you to people around the world. Download it from play store.</p>
+                        <a href="#"><i class="fa-solid fa-download"></i></a>
+                    </div>
+                </div>
+              </div>
+              <a href="#" class="btn">see more</a>
+
+        </div>
+    </div>
+
+    <!-- ---------------------------------contact-------------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> satyamhimesh@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91-8105542318</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="images/lion.jpg" download class="btn btn2" >Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" id="" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright &copy; CypherHarley. Made with <i class="fa-solid fa-heart"></i> by Himesh </p>
+        </div>
+    </div>
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    
+    
+      
+      <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwKCbDLxUbvFf3szP_5Ylvp9Wf6FUkOCbX61CprxXSBRTLcj-N8KcyvMcgNNkZWZEo2yg/exec'
+        const form = document.forms['submit-to-google-sheet'];
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => { msg.innerHTML = "Message sent successfully." 
+                setTimeout(function(){
+                    msg.innerHTML = "";
+                },5000)
+                form.reset();
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
+</body>
+</html>

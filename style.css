@@ -224,6 +224,7 @@ body{
     font-size: 14px;
     transition: height 0.5s;
 }
+
 .layer h3{
     font-weight: 500;
     margin-bottom: 20px;
@@ -396,6 +397,21 @@ nav .fas{
     .about-col-1{
         font-size: 14px;
     }
+    .work img{
+        height: 440px;
+    }
+    
+    .layer{
+        background: linear-gradient(rgba(0,0,0,0.1),#ff004f);
+        height:50%;
+    }
+    .layer h3{   
+        font-weight: 600;
+    }
+    .work:hover .layer{
+    height: 80%;
+}
+
     .tab-links{
         font-size: 16px;
         margin-right: 20px;

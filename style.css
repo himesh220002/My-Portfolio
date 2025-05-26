@@ -12,7 +12,7 @@ html {
 body {
     background-color: #080808;
     color: #fff;
-
+    overflow-x: none;
 }
 
 #header {
@@ -208,7 +208,9 @@ body {
 
 /*------------------ Tech Stack Centering and spacing ------------*/
 
-
+#tech{
+    padding: 70px 0 40px 0;
+}
 .maincontainer {
     display: flex;
     gap: 10px;
@@ -569,7 +571,7 @@ nav .fas {
     }
 
     .copyright {
-        font-size: 14px;
+        font-size: 12px;
     }
 
 }

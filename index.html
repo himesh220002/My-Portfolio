@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preload" as="image" href="images//fordmustang.jpg">
+    <link rel="preload" as="image" href="images/cover.webp">
+    <link rel="preload" as="image" href="images/work2.jpg">
+
     <script src="https://kit.fontawesome.com/5f1895c567.js" crossorigin="anonymous"></script>
 </head>
 
@@ -247,7 +251,7 @@
             <h1 class="sub-title">My Work</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="images/fordmustang.jpg" style="scale: 1.2;">
+                    <img class="work-img" src="images/fordmustang.jpg" style="scale: 1.2;">
                     <div class="layer">
 
                         <h3>Car-Marketplace</h3>
@@ -258,7 +262,7 @@
                     </div>
                 </div>
                 <div class="work">
-                    <img src="images/cover.webp">
+                    <img class="work-img" src="images/cover.webp">
                     <div class="layer">
 
                         <h3>React Music Player</h3>
@@ -268,7 +272,7 @@
                     </div>
                 </div>
                 <div class="work">
-                    <img src="images/work3.jpg">
+                    <img class="work-img" src="images/work3.jpg">
                     <div class="layer">
                         <h3>My App</h3>
                         <p>The app connects you to people around the world. Download it from play store.</p>
@@ -276,7 +280,7 @@
                     </div>
                 </div>
             </div>
-            <a href="#" class="btn">see more</a>
+            <a href="https://github.com/himesh220002" target="_blank" class="btn">see more</a>
 
         </div>
     </div>
@@ -380,6 +384,13 @@
         }
     </script>
 
+    <!-- <script>
+        window.addEventListener("load", function () {
+            document.querySelectorAll(".work-img").forEach(img => {
+                img.src = img.getAttribute("data-src"); /
+            });
+        });
+    </script> -->
 
 
 

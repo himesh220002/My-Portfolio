@@ -15,14 +15,14 @@
             <nav>
                 <img src="images/CypHarleylogo4.png" class="logo" style="width: 80px;">
                 <ul id="sidemenu">
-                    <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#header" onclick={closemenu()}>Home</a></li>
+                    <li><a href="#about" onclick={closemenu()}>About</a></li>
+                    <li><a href="#services" onclick={closemenu()}>Services</a></li>
+                    <li><a href="#portfolio" onclick={closemenu()}>Portfolio</a></li>
+                    <li><a href="#contact" onclick={closemenu()}>Contact</a></li>
                     <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
-                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+                <i id="menu-btn" class="fas fa-solid fa-bars" onclick="openmenu()"></i>
 
             </nav>
             <div class="header-text">
@@ -221,8 +221,7 @@
                     <h3>Auth & Deploy</h3>
                     <div class="tech-contain">
                         <div class="skills">
-                            <div><img class="tech-icon icon"
-                                    src="https://cdn.simpleicons.org/googleauthenticator/00AFFF" alt="Oauth"></div>
+                            <div><img class="tech-icon icon" src="images/OAuth.png" alt="Oauth"></div>
                             <div>Google OAuth</div>
                         </div>
                         <div class="skills">
@@ -248,8 +247,7 @@
             <h1 class="sub-title">My Work</h1>
             <div class="work-list">
                 <div class="work">
-                    <img src="https://res.cloudinary.com/dbcx5bxea/image/upload/v1748098817/Car-marketplace/jissx1nllns3mtspiwec.jpg"
-                        style="scale: 1.2;">
+                    <img src="images/fordmustang.jpg" style="scale: 1.2;">
                     <div class="layer">
 
                         <h3>Car-Marketplace</h3>
@@ -297,7 +295,8 @@
                         <a href="https://www.twitter.com/"><i class="fa-brands fa-twitter"></i></a>
                         <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
                     </div>
-                    <a href="images/lion.jpg" download class="btn btn2">Download CV</a>
+                    <a href="images/HimeshSatyamResumeJdSE.pdf" target="_blank" download class="btn btn2">Download
+                        CV</a>
                 </div>
                 <div class="contact-right">
                     <form name="submit-to-google-sheet">
@@ -335,15 +334,52 @@
     </script>
 
     <script>
+        window.addEventListener("scroll", function () {
+            let divs = document.querySelectorAll(".services-list div");
+            let activeFound = false;
+
+            divs.forEach((item, index) => {
+                let rect = item.getBoundingClientRect();
+
+                if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
+                    divs.forEach((el, i) => el.classList.toggle("scrolled", i === index));
+                    activeFound = true;
+                }
+            });
+
+            // If no active div in viewport, reset all
+            if (!activeFound) {
+                divs.forEach(el => el.classList.remove("scrolled"));
+            }
+        });
+    </script>
+
+
+
+
+
+    <script>
         var sidemenu = document.getElementById("sidemenu");
+        var menuButton = document.getElementById("menu-btn"); // Add an ID to your menu button
 
         function openmenu() {
             sidemenu.style.right = "0";
+            document.addEventListener("click", closeOnClickOutside);
         }
+
         function closemenu() {
             sidemenu.style.right = "-200px";
+            document.removeEventListener("click", closeOnClickOutside);
+        }
+
+        function closeOnClickOutside(event) {
+            // Ensures the menu stays open when clicking inside or on the button
+            if (!sidemenu.contains(event.target) && event.target !== menuButton) {
+                closemenu();
+            }
         }
     </script>
+
 
 
 

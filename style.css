@@ -233,6 +233,7 @@ body {
     flex-wrap: wrap;
     gap: 10px;
     margin: 0px;
+    padding: 10px;
     text-align: center;
     justify-content: space-around;
 }
@@ -458,6 +459,7 @@ nav .fas {
     nav .fas {
         display: block;
         font-size: 25px;
+       
     }
 
     nav ul {
@@ -468,10 +470,12 @@ nav .fas {
         top: 0;
         right: -200px;
         width: 200px;
-        height: 100vh;
+        height: 40vh;
         padding-top: 50px;
         z-index: 2;
         transition: right 0.5s;
+         border: 1px solid black;
+        border-radius: 0 0 0 10px;
     }
 
     nav ul li {
@@ -502,6 +506,16 @@ nav .fas {
     .about-col-1 {
         font-size: 14px;
     }
+
+    .services-list div {
+    background: #262626;
+
+    transition: background 0.5s ease-in-out;
+  }
+
+  .services-list div.scrolled {
+    background: #ff004f; /* Change background when scrolled */
+  }
 
     .work img {
         height: 440px;

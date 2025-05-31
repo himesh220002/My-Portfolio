@@ -222,9 +222,12 @@ body {
     gap: 20px;
     align-items: center;
     justify-content: start;
-    background: linear-gradient(rgba(0, 0, 0, 0.1), #86022c87);
+    background: linear-gradient(rgba(0, 0, 0, 0.1),  #ff005162);
     margin-top: 50px;
     border-radius: 10px;
+}
+.tech-container:hover{
+    background: linear-gradient(rgba(0, 0, 0, 0.1), #ff004f); ;
 }
 
 .tech-contain {

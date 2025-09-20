@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 
@@ -451,3 +452,467 @@
 </body>
 
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+        <!-- Page Title (Displayed in Search Results) -->
+    <title>Himesh Satyam Portfolio | Full-Stack Web Developer | React & Express.js Expert</title>
+
+    <!-- Meta Description (Boosts Click-Through Rate) -->
+    <meta name="description" content="Himesh Satyam Portfolio, a full-stack web developer skilled in React.js, Express.js, MongoDB, and Tailwind CSS. Explore projects like Car Marketplace, Secrets App, and more.">
+
+    <!-- Keywords (Not as crucial but helpful for relevance) -->
+    <meta name="keywords" content="Himesh Satyam Portfolio, web development, React, Express.js, MongoDB, Tailwind CSS, portfolio, full-stack developer, UI/UX">
+
+    <!-- Canonical URL (Avoids Duplicate Issues) -->
+    <link rel="canonical" href="https://himesh220002.github.io/My-Portfolio/">
+
+    <!-- Open Graph (For Better Social Media Sharing) -->
+    <meta property="og:title" content="Himesh Satyam - Web Developer Portfolio">
+    <meta property="og:description" content="Explore my web development projects built using React.js, Express.js, MongoDB, and Tailwind CSS.">
+    <meta property="og:image" content="https://himesh220002.github.io/My-Portfolio/images/portfolio-preview.jpg">
+    <meta property="og:url" content="https://himesh220002.github.io/My-Portfolio/">
+
+    <!-- Twitter Card (Optimized Preview on Twitter) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Himesh Satyam - Web Developer Portfolio">
+    <meta name="twitter:description" content="Full-stack developer specializing in React.js, Express.js, and MongoDB. Explore projects and UI/UX designs.">
+    <meta name="twitter:image" content="https://himesh220002.github.io/My-Portfolio/images/portfolio-preview.jpg">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/CypHarleylogo4.png" type="image/x-icon">
+    
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preload" as="image" href="images//fordmustang.jpg">
+    <link rel="preload" as="image" href="images/cover.webp">
+    <link rel="preload" as="image" href="images/work2.jpg">
+
+    <script src="https://kit.fontawesome.com/5f1895c567.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/CypHarleylogo4.png" class="logo" style="width: 80px;">
+                <ul id="sidemenu">
+                    <li><a href="#header" onclick={closemenu()}>Home</a></li>
+                    <li><a href="#about" onclick={closemenu()}>About</a></li>
+                    <li><a href="#services" onclick={closemenu()}>Services</a></li>
+                    <li><a href="#portfolio" onclick={closemenu()}>Portfolio</a></li>
+                    <li><a href="#contact" onclick={closemenu()}>Contact</a></li>
+                    <i class="fas fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i id="menu-btn" class="fas fa-solid fa-bars" onclick="openmenu()"></i>
+
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>Himesh</span><br> Satyam from India</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------------------about--------------------------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/person_anime1.jpg" style="object-fit: cover;">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a passionate and dedicated web developer with a solid foundation in HTML, CSS, JavaScript,
+                        React.js and various modern web development frameworks and tools. My experience includes
+                        building responsive and dynamic web applications. I have a strong understanding of the Document
+                        Object Model and am proficient in API integration and authentication processes. My goal is to
+                        create user-friendly, efficient,and visually appealing web applications. I am committed to
+                        following best practices to write clean, maintainable, and scalable code. I am always eager to
+                        learn new technologies and improve my skills to stay current with industry trends.</p>
+                    <div class="tab-titels">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <!-- <p class="tab-links" onclick="opentab('experience')">Experience</p> -->
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web app development</li>
+                            <li><span>App Development</span><br>Building android/iOS apps</li>
+                        </ul>
+                    </div>
+                    <!-- <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023-Current</span><br>Designing and developing web apps at WebInfo solutions</li>
+
+                        </ul>
+                    </div> -->
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023</span><br>Computer Science and Engineering from SJC Institute of Technology
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------------------------services------------------------ -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web design</h2>
+                    <p>Specialized in creating visually stunning, user-friendly, and responsive web designs tailored to
+                        meet diverse client needs. With a focus on delivering intuitive user experiences, I blend
+                        creativity with the latest technologies to craft websites that are both functional and
+                        aesthetically appealing.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-uikit"></i>
+                    <h2>UI/UX design</h2>
+                    <p>Designing user experiences that are seamless, intuitive, and engaging, backed by research and
+                        creativity. My approach combines aesthetics with functionality, ensuring that every interaction
+                        between the user and the product is meaningful and impactful.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-mobile"></i>
+                    <h2>App design</h2>
+                    <p>Specialized in designing innovative, user-centric mobile and web applications that deliver
+                        seamless experiences. By blending functionality with modern aesthetics, I ensure that every app
+                        is not only visually appealing but also highly intuitive and engaging.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- Parent Wrapper for Tech Stack -->
+
+    <div id="tech">
+        <div class="container">
+            <h2 class="sub-title techText">Tech Stack</h2>
+
+            <div class="maincontainer">
+                <!-- Front-End Section -->
+                <div class="tech-container">
+                    <h3 class="">Front-end</h3>
+                    <div class="tech-contain">
+                        <div class="skills">
+                            <div><i class="fab fa-react tech-icon"></i></div>
+                            <div>React</div>
+                        </div>
+                        <div class="skills">
+                            <div><i class="fab fa-js tech-icon"></i></div>
+                            <div>JavaScript</div>
+                        </div>
+                        <div class="skills">
+                            <div><img class="tech-icon icon" src="https://cdn.simpleicons.org/typescript/3178C6"
+                                    alt="TypeScript"></div>
+                            <div>TypeScript</div>
+                        </div>
+                        <div class="skills">
+                            <div><i class="fab fa-html5 tech-icon"></i></div>
+                            <div>HTML</div>
+                        </div>
+                        <div class="skills">
+                            <div><img class="tech-icon icon" src="https://cdn.simpleicons.org/ejs/8F1A1A" alt="EJS">
+                            </div>
+                            <div>EJS</div>
+                        </div>
+                        <div class="skills">
+                            <div><img class="tech-icon icon" src="https://cdn.simpleicons.org/shadcnui/000FFF"
+                                    alt="ShadCN"></div>
+                            <div>ShadCN UI</div>
+                        </div>
+                        <div class="skills">
+                            <div><i class="fab fa-bootstrap tech-icon"></i></div>
+                            <div>Bootstrap</div>
+                        </div>
+                        <div class="skills">
+                            <div><img class="tech-icon icon" src="https://cdn.simpleicons.org/tailwindcss/06B6D4"
+                                    alt="Tailwind"></div>
+                            <div>Tailwind</div>
+                        </div>
+
+
+
+
+
+                    </div>
+                </div>
+
+
+                <!-- Back-End Section -->
+                <div class="tech-container">
+                    <h3>Back-end</h3>
+                    <div class="tech-contain">
+                        <div class="skills">
+                            <div><img class="tech-icon icon" src="https://cdn.simpleicons.org/express/00FF00"
+                                    alt="Express.js"></div>
+                            <div>Express</div>
+                        </div>
+                        <div class="skills">
+                            <div><i class="fab fa-node-js tech-icon"></i></div>
+                            <div>Node</div>
+                        </div>
+                        <div class="skills">
+                            <div><img class="tech-icon icon" src="https://cdn.simpleicons.org/drizzle/9F79EE"
+                                    alt="Drizzle"></div>
+                            <div>Drizzle</div>
+                        </div>
+
+                        <div class="skills">
+                            <div><img class="tech-icon icon" src="https://cdn.simpleicons.org/passport/34E27A"
+                                    alt="Passport.js"></div>
+                            <div>Passport</div>
+                        </div>
+
+
+                    </div>
+                </div>
+                <!-- Database -->
+                <div class="tech-container">
+                    <h3>Database</h3>
+                    <div class="tech-contain">
+                        <div class="skills">
+                            <div><img class="tech-icon icon" src="https://cdn.simpleicons.org/postgresql/336791"
+                                    alt="PostgreSQL">
+                            </div>
+                            <div>Postgres</div>
+                        </div>
+                        <div class="skills">
+                            <div><img class="tech-icon icon" src="https://cdn.simpleicons.org/mongodb/47A248"
+                                    alt="MongoDB"></div>
+                            <div>MongoDB</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Auth & deploy -->
+                <div class="tech-container">
+                    <h3>Auth & Deploy</h3>
+                    <div class="tech-contain">
+                        <div class="skills">
+                            <div><img class="tech-icon icon" src="images/OAuth.png" alt="Oauth"></div>
+                            <div>Google OAuth</div>
+                        </div>
+                        <div class="skills">
+                            <div><img class="tech-icon icon" src="https://cdn.simpleicons.org/vercel/0000F0"
+                                    alt="Vercel"></div>
+                            <div>Vercel</div>
+                        </div>
+                        <div class="skills">
+                            <div><i class="fab fa-github tech-icon"></i></div>
+                            <div>Github</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ---------------------------portfolio------------------------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img class="work-img" src="images/fordmustang.jpg" style="scale: 1.2;">
+                    <div class="layer">
+
+                        <h3>Car-Marketplace</h3>
+                        <p>Find the perfect ride anytime, anywhere! Connect with buyers and sellers globally. Download
+                            now from the Play Store. </p>
+                        <a class="link_lg_screen" href="https://car-marketplace-web-app-seven.vercel.app/"
+                            target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img class="work-img" src="images/cover.webp">
+                    <div class="layer">
+
+                        <h3>React Music Player</h3>
+                        <p>The app connects you to all the playlist around the world. Download it from play store.</p>
+                        <a class="link_lg_screen" href="https://music-player-nine-lake.vercel.app/" target="_blank"><i
+                                class="fa-solid fa-arrow-up-right-from-square "></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img class="work-img" src="images/Secrets_image.png">
+                    <div class="layer">
+                        <h3>Anynomus Secrets</h3>
+                        <p>The app connects you to people around the world. Download it from play store.</p>
+                        <a class="link_lg_screen" href="https://secrets-ochre.vercel.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img class="work-img" src="images/chatbot.jpg">
+                    <div class="layer">
+                        <h3>Chat-bot-ai</h3>
+                        <p>Chatbot built with React.</p>
+                        <a class="link_lg_screen" href="https://chat-bot-cypher.netlify.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img class="work-img" src="images/Spreadsheet.jpg">
+                    <div class="layer">
+                        <h3>Spreadsheet-Ui</h3>
+                        <p>Simple spreadsheet UI built with React.</p>
+                        <a class="link_lg_screen" href="https://react-spreadsheet-ui-one.vercel.app/" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/himesh220002" target="_blank" class="btn">see more</a>
+
+        </div>
+    </div>
+
+    <!-- ---------------------------------contact-------------------------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-envelope"></i> satyamhimesh@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91-8105542318</p>
+                    <div class="social-icons">
+                        <a href="#contact"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#contact"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#contact"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/himesh-satyam/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/himesh220002" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/HSresume_2025.pdf" target="_blank" download class="btn btn2">Download
+                        CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" id="" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright &copy; 2025 CypherHarley. Made with <i class="fa-solid fa-heart"></i> by Himesh </p>
+        </div>
+    </div>
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+        window.addEventListener("scroll", function () {
+            let divs = document.querySelectorAll(".services-list div");
+            let activeFound = false;
+
+            divs.forEach((item, index) => {
+                let rect = item.getBoundingClientRect();
+
+                if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
+                    divs.forEach((el, i) => el.classList.toggle("scrolled", i === index));
+                    activeFound = true;
+                }
+            });
+
+            // If no active div in viewport, reset all
+            if (!activeFound) {
+                divs.forEach(el => el.classList.remove("scrolled"));
+            }
+        });
+    </script>
+
+
+
+
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        var menuButton = document.getElementById("menu-btn"); // Add an ID to your menu button
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+            document.addEventListener("click", closeOnClickOutside);
+        }
+
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+            document.removeEventListener("click", closeOnClickOutside);
+        }
+
+        function closeOnClickOutside(event) {
+            // Ensures the menu stays open when clicking inside or on the button
+            if (!sidemenu.contains(event.target) && event.target !== menuButton) {
+                closemenu();
+            }
+        }
+    </script>
+
+    <!-- <script>
+        window.addEventListener("load", function () {
+            document.querySelectorAll(".work-img").forEach(img => {
+                img.src = img.getAttribute("data-src"); /
+            });
+        });
+    </script> -->
+
+
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwKCbDLxUbvFf3szP_5Ylvp9Wf6FUkOCbX61CprxXSBRTLcj-N8KcyvMcgNNkZWZEo2yg/exec'
+        const form = document.forms['submit-to-google-sheet'];
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully."
+                    setTimeout(function () {
+                        msg.innerHTML = "";
+                    }, 5000)
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+
+</html>
+>>>>>>> fbdcb53f347a84177ddf3c32d010e3e3a932a53c

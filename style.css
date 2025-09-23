@@ -28,11 +28,11 @@ body {
     width: 140px;
 }
 
-.container {
+.containerr {
     padding: 10px 10%;
 }
 
-.container nav {
+.containerr nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -40,20 +40,20 @@ body {
 
 }
 
-.container nav ul li {
+.containerr nav ul li {
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
 }
 
-.container nav ul li a {
+.containerr nav ul li a {
     color: #fff;
     text-decoration: none;
     font-size: 18px;
     position: relative;
 }
 
-.container nav ul li a::after {
+.containerr nav ul li a::after {
     content: '';
     width: 0;
     height: 3px;
@@ -64,7 +64,7 @@ body {
     transition: 0.5s;
 }
 
-.container nav ul li a:hover::after {
+.containerr nav ul li a:hover::after {
     width: 100%;
 }
 
@@ -72,9 +72,12 @@ body {
     margin-top: 20%;
     font-size: 30px;
 }
+.header-text p{
+    color: rgb(158, 184, 223);
+}
 
 .header-text h1 {
-    margin-top: 20px;
+    margin-top: 0px;
     font-size: 60px;
 }
 
@@ -202,7 +205,7 @@ body {
 }
 
 .services-list div:hover {
-    background: #ff004f;
+    background: #aa0539;
     transform: translateY(-10px);
 }
 
@@ -211,12 +214,12 @@ body {
 #tech{
     padding: 70px 0 40px 0;
 }
-.maincontainer {
+.maincontainerr {
     display: flex;
     gap: 10px;
 }
 
-.tech-container {
+.tech-containerr {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -226,7 +229,7 @@ body {
     margin-top: 50px;
     border-radius: 10px;
 }
-.tech-container:hover{
+.tech-containerr:hover{
     background: linear-gradient(rgba(0, 0, 0, 0.1), #ff004f); ;
 }
 
@@ -244,19 +247,30 @@ body {
 .skills {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 5px;
     width: 100px;
+    
+}
+.scroller{
+    color: #080808;
 }
 
-.icon {
+/* .icon {
     max-width: 40px;
-}
+} */
 
 /* Styling tech icons */
 .tech-icon {
-    font-size: 40px;
+    /* font-size: 80px; */
+    width: 30px;
+    height: 30px;
     color: #118daf;
     transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.skills div{
+    font-size: small;
 }
 
 .tech-icon:hover {
@@ -272,7 +286,7 @@ body {
 
 .work-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     grid-gap: 40px;
     margin-top: 50px;
 }
@@ -286,8 +300,8 @@ body {
 
 .work img {
     width: 100%;
-    object-fit: cover;
-    height: 400px;
+    object-fit: fill;
+    height: 500px;
     border-radius: 10px;
     display: block;
 
@@ -314,7 +328,7 @@ body {
 }
 
 .layer h3 {
-    font-weight: 500;
+    font-weight: 900;
     margin-bottom: 20px;
 }
 
@@ -448,6 +462,7 @@ nav .fas {
 }
 
 @media only screen and (max-width: 604px) {
+    
 
 
     .header-text {
@@ -517,22 +532,30 @@ nav .fas {
   }
 
   .services-list div.scrolled {
-    background: #ff004f; /* Change background when scrolled */
+    background: #aa0539; /* Change background when scrolled */
   }
 
+    .work{
+        max-width: 400px;
+    }
     .work img {
         height: 440px;
+        max-width: 400px;
     }
 
     .layer {
-        background: linear-gradient(rgba(0, 0, 0, 0.1), #ff004f);
-        height: 50%;
+        max-width: 400px;
+        background: linear-gradient(rgba(0, 0, 0, 0.1), #580922);
+        height: 70%;
     }
 
     .layer h3 {
         font-weight: 600;
     }
 
+    .layer p{
+        color: gray;
+    }
     .work:hover .layer {
         height: 80%;
     }
@@ -541,14 +564,14 @@ nav .fas {
         margin-bottom: 50px;
     }
 
-    .maincontainer {
+    .maincontainerr {
         flex-direction: column;
         gap: 20px;
         align-items: center;
         justify-content: center;
     }
 
-    .tech-container {
+    .tech-containerr {
         margin: 5px;
         gap: 15px;
         flex-wrap: wrap;
@@ -595,14 +618,14 @@ nav .fas {
 
 @media (min-width: 605px) and (max-width: 900px) {
 
-    .maincontainer {
+    .maincontainerr {
         flex-direction: row;
         gap: 20px;
         align-items: center;
         justify-content: center;
     }
 
-    .tech-container {
+    .tech-containerr {
         margin-top: 50px;
         gap: 15px;
         flex-wrap: wrap;

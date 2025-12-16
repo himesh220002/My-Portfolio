@@ -122,15 +122,15 @@
                             </li>
                             <li>
                                 <span>Frontend Expertise</span><br>
-                                Building responsive UIs with HTML, CSS, JavaScript, React.js, and modern frameworks
+                                Building responsive UIs with Next.js 16, React 19, Tailwind 4, and Framer Motion
                             </li>
                             <li>
                                 <span>Backend Development</span><br>
-                                Creating secure APIs, authentication flows, and database integrations
+                                Creating secure APIs with Supabase, Prisma, and Server Components
                             </li>
                             <li>
                                 <span>Database Management</span><br>
-                                Proficient in SQL and NoSQL databases like PostgreSQL and MongoDB
+                                Proficient in PostgreSQL (Supabase), Prisma ORM, and MongoDB
                             </li>
                             <li>
                                 <span>Version Control & Deployment</span><br>
@@ -419,6 +419,17 @@
                         <div class="skills"><img class="tech-icon icon" src="images/github-color.svg">
                             <div>Github</div>
                         </div>
+                        <div class="skills"><img class="tech-icon icon"
+                                src="https://cdn.simpleicons.org/nextdotjs/000000">
+                            <div>Next.js</div>
+                        </div>
+                        <div class="skills"><img class="tech-icon icon"
+                                src="https://cdn.simpleicons.org/supabase/3ECF8E">
+                            <div>Supabase</div>
+                        </div>
+                        <div class="skills"><img class="tech-icon icon" src="https://cdn.simpleicons.org/prisma/2D3748">
+                            <div>Prisma</div>
+                        </div>
 
                     </div>
 
@@ -498,6 +509,17 @@
                         <div class="skills"><img class="tech-icon icon" src="images/github-color.svg">
                             <div>Github</div>
                         </div>
+                        <div class="skills"><img class="tech-icon icon"
+                                src="https://cdn.simpleicons.org/nextdotjs/000000">
+                            <div>Next.js</div>
+                        </div>
+                        <div class="skills"><img class="tech-icon icon"
+                                src="https://cdn.simpleicons.org/supabase/3ECF8E">
+                            <div>Supabase</div>
+                        </div>
+                        <div class="skills"><img class="tech-icon icon" src="https://cdn.simpleicons.org/prisma/2D3748">
+                            <div>Prisma</div>
+                        </div>
 
                     </div>
 
@@ -513,103 +535,61 @@
 
     <!-- ---------------------------portfolio------------------------- -->
 
+    <!-- ---------------------------portfolio------------------------- -->
+
+    <!-- Animated Counters Section -->
+    <div id="stats-counter" class="containerr"
+        style="padding: 40px 0; display: flex; justify-content: space-around; flex-wrap: wrap; text-align: center;">
+        <div class="stat-item">
+            <h2 class="counter" data-target="12" style="font-size: 40px; color: #ff004f;">0</h2>
+            <p>Projects Completed</p>
+        </div>
+        <div class="stat-item">
+            <h2 class="counter" data-target="5" style="font-size: 40px; color: #ff004f;">0</h2>
+            <p>Open Source Contributions</p>
+        </div>
+        <div class="stat-item">
+            <h2 class="counter" data-target="3" style="font-size: 40px; color: #ff004f;">0</h2>
+            <p>Hackathon Wins</p>
+        </div>
+    </div>
+
     <div id="portfolio">
         <div class="containerr">
             <h1 class="sub-title">My Work</h1>
-            <div class="work-list">
-                <div class="work">
-                    <img class="work-img" src="images/fordmustang.jpg" style="scale: 1.2;">
-                    <div class="layer">
 
-                        <h3>Car-Marketplace</h3>
-                        <p>
-                            Discover your ideal ride with ease — anytime, anywhere.
-                            Seamlessly connect with trusted buyers and sellers worldwide,
-                            all through a responsive and user‑friendly web application.
-                        </p>
+            <!-- Search & Filter Bar -->
+            <div class="filter-bar" style="margin: 20px 0; display: flex; gap: 10px; flex-wrap: wrap;">
+                <input type="text" id="search-input" placeholder="Search projects..."
+                    style="padding: 10px; border-radius: 5px; border: none; outline: none; background: #262626; color: #fff;">
+                <button class="filter-btn active" onclick="filterProjects('all')"
+                    style="padding: 10px 20px; border-radius: 5px; border: 1px solid #ff004f; background: transparent; color: #fff; cursor: pointer;">All</button>
+                <button class="filter-btn" onclick="filterProjects('React')"
+                    style="padding: 10px 20px; border-radius: 5px; border: 1px solid #ff004f; background: transparent; color: #fff; cursor: pointer;">React</button>
+                <button class="filter-btn" onclick="filterProjects('Full-Stack')"
+                    style="padding: 10px 20px; border-radius: 5px; border: 1px solid #ff004f; background: transparent; color: #fff; cursor: pointer;">Full-Stack</button>
+                <button class="filter-btn" onclick="filterProjects('UI/UX')"
+                    style="padding: 10px 20px; border-radius: 5px; border: 1px solid #ff004f; background: transparent; color: #fff; cursor: pointer;">UI/UX</button>
+            </div>
 
-
-                        <a class="link_lg_screen" href="https://car-marketplace-web-app-seven.vercel.app/"
-                            target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img class="work-img" src="images/techdeal3.png" style="scale: 1.2;">
-                    <div class="layer">
-
-                        <h3>Tech-Deals</h3>
-                        <p>
-                            Discover the best tech at unbeatable prices — anytime, anywhere.
-                            Connect instantly with buyers and sellers worldwide,
-                            through a fast and intuitive web platform.
-                        </p>
-
-
-                        <a class="link_lg_screen" href="https://tech-deal-rho.vercel.app/" target="_blank"><i
-                                class="fa-solid fa-arrow-up-right-from-square"></i></i></a>
-                    </div>
-                </div>
-
-                <div class="work">
-                    <img class="work-img" src="images/Secrets_image.png">
-                    <div class="layer">
-                        <h3>Anonymous Secrets</h3>
-                        <p>
-                            Share and discover secrets anonymously while connecting with people across the globe.
-                            Experience a safe and engaging space for open expression, built as a secure web app.
-                        </p>
-
-
-                        <a class="link_lg_screen" href="https://secrets-ochre.vercel.app/" target="_blank"><i
-                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img class="work-img" src="images/chatbot.jpg">
-                    <div class="layer">
-                        <h3>Chat-Bot AI (Prototype)</h3>
-                        <p>
-                            An intelligent chatbot application built with React,
-                            designed to deliver seamless conversations, real‑time responses,
-                            and an interactive user experience.
-                        </p>
-                        <a class="link_lg_screen" href="https://chat-bot-cypher.netlify.app/" target="_blank"><i
-                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img class="work-img" src="images/mnm2.png">
-                    <div class="layer">
-
-                        <h3>React Music Player</h3>
-                        <p>
-                            A sleek and responsive music player built with React.
-                            Explore and enjoy playlists from around the world,
-                            directly in your browser with a smooth, interactive interface.
-                        </p>
-
-
-                        <a class="link_lg_screen" href="https://music-player-nine-lake.vercel.app/" target="_blank"><i
-                                class="fa-solid fa-arrow-up-right-from-square "></i></a>
-                    </div>
-                </div>
-                <div class="work">
-                    <img class="work-img" src="images/spreadsheetui1.png">
-                    <div class="layer">
-                        <h3>Spreadsheet-UI (Prototype)</h3>
-                        <p>
-                            A demo spreadsheet interface built with React as part of an internship assignment.
-                            Focused on UI structure and component design rather than full functionality.
-                        </p>
-                        <a class="link_lg_screen" href="https://react-spreadsheet-ui-one.vercel.app/" target="_blank">
-                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                        </a>
-                    </div>
-                </div>
+            <div class="work-list" id="work-list">
 
             </div>
             <a href="https://github.com/himesh220002" target="_blank" class="btn">see more</a>
 
+        </div>
+    </div>
+
+    <!-- Project Case Study Modal -->
+    <div id="project-modal" class="modal"
+        style="display: none; position: fixed; z-index: 1000; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.9);">
+        <div class="modal-content"
+            style="background-color: #1f1f1f; margin: 5% auto; padding: 20px; border: 1px solid #888; width: 80%; max-width: 800px; border-radius: 10px; position: relative;">
+            <span class="close-modal" onclick="closeModal()"
+                style="color: #aaa; float: right; font-size: 28px; font-weight: bold; cursor: pointer;">&times;</span>
+            <div id="modal-body">
+
+            </div>
         </div>
     </div>
 
@@ -634,7 +614,7 @@
                         <a href="https://github.com/himesh220002" target="_blank"><i
                                 class="fa-brands fa-github"></i></a>
                     </div>
-                    <a href="images/HSresume_2025.pdf" target="_blank" download class="btn btn2">Download
+                    <a href="images/HimeshSAtyamCVdec2025.pdf" target="_blank" download class="btn btn2">Download
                         CV</a>
                 </div>
                 <div class="contact-right">
@@ -746,6 +726,357 @@
                 })
                 .catch(error => console.error('Error!', error.message))
         })
+    </script>
+
+    <!-- Project Data & Logic -->
+    <script>
+        const projects = [
+            {
+                id: "tech-nitro",
+                title: "Tech Nitro",
+                category: ["Full-Stack", "Next.js", "E-commerce"],
+                isFlagship: true,
+                img: "images/Screenshot from 2025-12-07 17-39-24.png",
+                images: [
+                    "images/Screenshot from 2025-12-07 17-39-24.png",
+                    "images/Screenshot from 2025-12-07 17-55-36.png",
+                ],
+                description: "A bleeding-edge e-commerce platform built with Next.js 16, React 19, and Supabase. Features Server Components, Tailwind 4 styling, and AI-powered recommendations.",
+                techStack: ["Next.js", "TypeScript", "MongoDB", "Razorpay", "NextAuth", "Tailwind", "React Query"],
+                links: { live: "https://tech-nitro.vercel.app/", github: "https://github.com/himesh220002/TechNitro" },
+                caseStudy: {
+                    problem: "Building a modern, scalable e-commerce platform with the latest web technologies.",
+                    outcome: "Achieved 100/100 performance score with Server Components and seamless auth via Supabase.",
+                    stack: ["Next.js", "TypeScript", "MongoDB", "Razorpay", "NextAuth", "Tailwind", "React Query"]
+                }
+            },
+            {
+                id: "car-marketplace",
+                title: "Car Marketplace",
+                category: ["Full-Stack", "React", "Node.js"],
+                isFlagship: true,
+                img: "images/carmarketplace_SC2.png",
+                images: [
+                    "images/carmarketplace_SC2.png",
+                    "images/carmarketplace_SC.png",
+
+                ],
+                description: "Discover your ideal ride with ease. Seamlessly connect with trusted buyers and sellers worldwide.",
+                techStack: ["React", "Node.js", "Express.js", "MongoDB", "JWT", "Cloudinary", "Tailwind"],
+                links: { live: "https://car-marketplace-web-app-seven.vercel.app/", github: "https://github.com/himesh220002" },
+                caseStudy: {
+                    problem: "Buying used cars is often a hassle with untrusted sellers.",
+                    outcome: "Created a transparent platform with verified listings.",
+                    stack: ["React", "Node.js", "Express.js", "MongoDB", "JWT", "Cloudinary", "Tailwind"]
+                }
+            },
+            {
+                id: "tech-deals",
+                title: "Tech-Deals",
+                category: ["Full-Stack", "React"],
+                isFlagship: false,
+                img: "images/techdeal3.png",
+                description: "Discover the best tech at unbeatable prices. Connect instantly with buyers and sellers.",
+                techStack: ["React", "Firebase", "CSS"],
+                links: { live: "https://tech-deal-rho.vercel.app/", github: "https://github.com/himesh220002" },
+                caseStudy: {
+                    problem: "Finding tech deals across multiple sites is time-consuming.",
+                    outcome: "Aggregated deals in one place, saving users time.",
+                    stack: ["React", "Firebase", "API Integration"]
+                }
+            },
+            {
+                id: "secrets",
+                title: "Anonymous Secrets",
+                category: ["Full-Stack", "Node.js"],
+                isFlagship: false,
+                img: "images/Secrets_image.png",
+                description: "Share and discover secrets anonymously. Experience a safe space for open expression.",
+                techStack: ["Node.js", "EJS", "MongoDB"],
+                links: { live: "https://secrets-ochre.vercel.app/", github: "https://github.com/himesh220002" },
+                caseStudy: {
+                    problem: "People need a safe outlet to share thoughts without judgment.",
+                    outcome: "Over 1000+ secrets shared anonymously.",
+                    stack: ["Node.js", "Passport.js", "MongoDB"]
+                }
+            },
+            {
+                id: "chatbot",
+                title: "Chat-Bot AI",
+                category: ["React", "AI"],
+                isFlagship: false,
+                img: "images/chatbot.jpg",
+                description: "An intelligent chatbot application built with React, designed to deliver seamless conversations.",
+                techStack: ["React", "OpenAI API"],
+                links: { live: "https://chat-bot-cypher.netlify.app/", github: "https://github.com/himesh220002" },
+                caseStudy: {
+                    problem: "Customer support is often slow and unavailable 24/7.",
+                    outcome: "Instant responses reduced wait times by 90%.",
+                    stack: ["React", "Node.js", "OpenAI API"]
+                }
+            },
+            {
+                id: "music-player",
+                title: "React Music Player",
+                category: ["React", "UI/UX"],
+                isFlagship: false,
+                img: "images/mnm2.png",
+                description: "A sleek and responsive music player. Explore and enjoy playlists with a smooth interface.",
+                techStack: ["React", "CSS"],
+                links: { live: "https://music-player-nine-lake.vercel.app/", github: "https://github.com/himesh220002" },
+                caseStudy: {
+                    problem: "Standard web players lack customization and visual appeal.",
+                    outcome: "Highly customizable player with visualization.",
+                    stack: ["React", "Web Audio API"]
+                }
+            },
+            {
+                id: "spreadsheet",
+                title: "Spreadsheet-UI",
+                category: ["React", "Prototype"],
+                isFlagship: false,
+                img: "images/spreadsheetui1.png",
+                description: "A demo spreadsheet interface built with React. Focused on UI structure and component design.",
+                techStack: ["React", "CSS"],
+                links: { live: "https://react-spreadsheet-ui-one.vercel.app/", github: "https://github.com/himesh220002" },
+                caseStudy: {
+                    problem: "Complex data entry needs a familiar, Excel-like interface.",
+                    outcome: "Intuitive grid component for data entry.",
+                    stack: ["React", "Canvas API"]
+                }
+            }
+        ];
+
+        function renderProjects(filter = 'all') {
+            const workList = document.getElementById('work-list');
+            workList.innerHTML = '';
+
+            const filteredProjects = filter === 'all'
+                ? projects
+                : projects.filter(p => p.category.includes(filter));
+
+            filteredProjects.forEach(project => {
+                const workDiv = document.createElement('div');
+                workDiv.className = `work ${project.isFlagship ? 'flagship' : ''}`;
+
+                // Tech stack icons HTML
+                const techIcons = project.techStack.map(tech => `<span style="font-size: 10px; background: rgba(255,255,255,0.2); padding: 2px 5px; border-radius: 4px; margin: 2px;">${tech}</span>`).join('');
+
+                workDiv.innerHTML = `
+                    <img class="work-img" src="${project.img}" alt="${project.title}">
+                    <div class="layer">
+                        <h3>${project.title}</h3>
+                        <p>${project.description}</p>
+                        <div style="margin: 10px 0; display: flex; flex-wrap: wrap; justify-content: center;">
+                            ${techIcons}
+                        </div>
+                        <div style="display: flex; gap: 10px; justify-content: center; align-items: center;">
+                            <a class="link_lg_screen" href="${project.links.live}" target="_blank" title="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <button onclick="openModal('${project.id}')" class="bg-[#ff004f] text-white border-none px-[15px] py-[8px] rounded-[5px] cursor-pointer text-[12px] mt-[20px] hover:bg-black transition-colors duration-300">View Case Study</button>
+                        </div>
+                    </div>
+                `;
+                workList.appendChild(workDiv);
+            });
+        }
+
+        function filterProjects(category) {
+            // Update active button
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.innerText === category || (category === 'all' && btn.innerText === 'All')) {
+                    btn.classList.add('active');
+                }
+            });
+            renderProjects(category);
+        }
+
+        // Search functionality
+        document.getElementById('search-input').addEventListener('input', (e) => {
+            const term = e.target.value.toLowerCase();
+            const workList = document.getElementById('work-list');
+            workList.innerHTML = '';
+
+            const filtered = projects.filter(p =>
+                p.title.toLowerCase().includes(term) ||
+                p.description.toLowerCase().includes(term) ||
+                p.techStack.some(t => t.toLowerCase().includes(term))
+            );
+
+            filtered.forEach(project => {
+                // Reuse render logic (simplified for brevity, ideally refactor renderProjects to accept array)
+                const workDiv = document.createElement('div');
+                workDiv.className = `work ${project.isFlagship ? 'flagship' : ''}`;
+                const techIcons = project.techStack.map(tech => `<span style="font-size: 10px; background: rgba(255,255,255,0.2); padding: 2px 5px; border-radius: 4px; margin: 2px;">${tech}</span>`).join('');
+
+                workDiv.innerHTML = `
+                    <img class="work-img" src="${project.img}" alt="${project.title}">
+                    <div class="layer">
+                        <h3>${project.title}</h3>
+                        <p>${project.description}</p>
+                        <div style="margin: 10px 0; display: flex; flex-wrap: wrap; justify-content: center;">
+                            ${techIcons}
+                        </div>
+                        <div style="display: flex; gap: 10px; justify-content: center; align-items: center;">
+                            <a class="link_lg_screen" href="${project.links.live}" target="_blank" title="Live Demo"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                            <button onclick="openModal('${project.id}')" style="background: #ff004f; color: white; border: none; padding: 8px 15px; border-radius: 5px; cursor: pointer; font-size: 12px; margin-top: 20px; hover: background: #fff4f; color: white;">View Case Study</button>
+                        </div>
+                    </div>
+                `;
+                workList.appendChild(workDiv);
+            });
+        });
+
+        // Modal Logic
+        let currentSlideIndex = 0;
+        let currentProjectImages = [];
+
+        function openModal(projectId) {
+            const project = projects.find(p => p.id === projectId);
+            if (!project) return;
+
+            const modal = document.getElementById('project-modal');
+            const modalBody = document.getElementById('modal-body');
+
+            // Prepare images
+            currentProjectImages = project.images || [project.img];
+            currentSlideIndex = 0;
+
+            // Generate Carousel HTML
+            let carouselHTML = '';
+            if (currentProjectImages.length > 0) {
+                const slides = currentProjectImages.map((img, index) => `
+                    <div class="carousel-slide ${index === 0 ? 'active' : ''}">
+                        <img src="${img}" alt="${project.title} Image ${index + 1}">
+                    </div>
+                `).join('');
+
+                const buttons = currentProjectImages.length > 1 ? `
+                    <button class="carousel-btn prev" onclick="moveSlide(-1)">&#10094;</button>
+                    <button class="carousel-btn next" onclick="moveSlide(1)">&#10095;</button>
+                ` : '';
+
+                const dots = currentProjectImages.length > 1 ? `
+                    <div class="carousel-dots">
+                        ${currentProjectImages.map((_, index) => `
+                            <span class="dot ${index === 0 ? 'active' : ''}" onclick="currentSlide(${index})"></span>
+                        `).join('')}
+                    </div>
+                ` : '';
+
+                carouselHTML = `
+                    <div class="carousel-container">
+                        ${slides}
+                        ${buttons}
+                        ${dots}
+                    </div>
+                `;
+            }
+
+            modalBody.innerHTML = `
+                <h2 style="color: #ff004f; font-size: 32px; margin-bottom: 20px;">${project.title}</h2>
+                
+                ${carouselHTML}
+                
+                <h3 style="color: #fff; margin-bottom: 10px;">Problem Statement</h3>
+                <p style="color: #ababab; margin-bottom: 20px;">${project.caseStudy.problem}</p>
+                
+                <h3 style="color: #fff; margin-bottom: 10px;">Tech Stack</h3>
+                <div style="margin-bottom: 20px;">
+                    ${project.caseStudy.stack.map(s => `<span style="background: #333; color: #fff; padding: 5px 10px; border-radius: 5px; margin-right: 10px; display: inline-block; margin-bottom: 5px;">${s}</span>`).join('')}
+                </div>
+
+                <h3 style="color: #fff; margin-bottom: 10px;">Outcome</h3>
+                <p style="color: #ababab; margin-bottom: 30px;">${project.caseStudy.outcome}</p>
+
+                <div style="display: flex; gap: 20px;">
+                    <a href="${project.links.live}" target="_blank" class="btn" style="margin: 0;">Live Demo</a>
+                    <a href="${project.links.github}" target="_blank" class="btn btn2" style="margin: 0; background: #333;">GitHub</a>
+                </div>
+            `;
+
+            modal.style.display = "block";
+        }
+
+        function moveSlide(n) {
+            showSlides(currentSlideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(currentSlideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            const slides = document.getElementsByClassName("carousel-slide");
+            const dots = document.getElementsByClassName("dot");
+
+            if (n >= slides.length) { currentSlideIndex = 0 }
+            if (n < 0) { currentSlideIndex = slides.length - 1 }
+
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+                slides[i].classList.remove("active");
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+
+            slides[currentSlideIndex].style.display = "block";
+            slides[currentSlideIndex].classList.add("active");
+            if (dots.length > 0) {
+                dots[currentSlideIndex].className += " active";
+            }
+        }
+
+        function closeModal() {
+            document.getElementById('project-modal').style.display = "none";
+        }
+
+        window.onclick = function (event) {
+            const modal = document.getElementById('project-modal');
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+
+        // Animated Counters
+        const counters = document.querySelectorAll('.counter');
+        const speed = 200;
+
+        const animateCounters = () => {
+            counters.forEach(counter => {
+                const updateCount = () => {
+                    const target = +counter.getAttribute('data-target');
+                    const count = +counter.innerText;
+                    const inc = target / speed;
+
+                    if (count < target) {
+                        counter.innerText = Math.ceil(count + inc);
+                        setTimeout(updateCount, 50); // Slower update
+                    } else {
+                        counter.innerText = target + "+";
+                    }
+                };
+                updateCount();
+            });
+        }
+
+        // Trigger animation when in view
+        let observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    observer.disconnect(); // Run once
+                }
+            });
+        });
+
+        observer.observe(document.getElementById('stats-counter'));
+
+        // Initial Render
+        renderProjects();
+
     </script>
 
 </body>

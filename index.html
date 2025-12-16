@@ -539,7 +539,7 @@
 
     <!-- Animated Counters Section -->
     <div id="stats-counter" class="containerr"
-        style="padding: 40px 0; display: flex; justify-content: space-around; flex-wrap: wrap; text-align: center;">
+        style="padding: 40px 0; display: flex; justify-content: center; flex-wrap: wrap; text-align: center;">
         <div class="stat-item">
             <h2 class="counter" data-target="12" style="font-size: 40px; color: #ff004f;">0</h2>
             <p>Projects Completed</p>
@@ -564,10 +564,11 @@
                     style="padding: 10px; border-radius: 5px; border: none; outline: none; background: #262626; color: #fff;">
                 <button class="filter-btn active" onclick="filterProjects('all')"
                     style="padding: 10px 20px; border-radius: 5px; border: 1px solid #ff004f; background: transparent; color: #fff; cursor: pointer;">All</button>
-                <button class="filter-btn" onclick="filterProjects('React')"
-                    style="padding: 10px 20px; border-radius: 5px; border: 1px solid #ff004f; background: transparent; color: #fff; cursor: pointer;">React</button>
                 <button class="filter-btn" onclick="filterProjects('Full-Stack')"
                     style="padding: 10px 20px; border-radius: 5px; border: 1px solid #ff004f; background: transparent; color: #fff; cursor: pointer;">Full-Stack</button>
+                <button class="filter-btn" onclick="filterProjects('React')"
+                    style="padding: 10px 20px; border-radius: 5px; border: 1px solid #ff004f; background: transparent; color: #fff; cursor: pointer;">React</button>
+
                 <button class="filter-btn" onclick="filterProjects('UI/UX')"
                     style="padding: 10px 20px; border-radius: 5px; border: 1px solid #ff004f; background: transparent; color: #fff; cursor: pointer;">UI/UX</button>
             </div>
@@ -773,7 +774,7 @@
             {
                 id: "tech-deals",
                 title: "Tech-Deals",
-                category: ["Full-Stack", "React"],
+                category: ["Full-Stack", "React", "UI/UX"],
                 isFlagship: false,
                 img: "images/techdeal3.png",
                 description: "Discover the best tech at unbeatable prices. Connect instantly with buyers and sellers.",
@@ -803,7 +804,7 @@
             {
                 id: "chatbot",
                 title: "Chat-Bot AI",
-                category: ["React", "AI"],
+                category: ["React", "AI", "Full-Stack"],
                 isFlagship: false,
                 img: "images/chatbot.jpg",
                 description: "An intelligent chatbot application built with React, designed to deliver seamless conversations.",
@@ -833,7 +834,7 @@
             {
                 id: "spreadsheet",
                 title: "Spreadsheet-UI",
-                category: ["React", "Prototype"],
+                category: ["React", "Prototype", "UI/UX"],
                 isFlagship: false,
                 img: "images/spreadsheetui1.png",
                 description: "A demo spreadsheet interface built with React. Focused on UI structure and component design.",
